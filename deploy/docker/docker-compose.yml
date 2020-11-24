@@ -1,8 +1,0 @@
-version: '3.3'
-
-services:
-  soulid:
-    image: registry.gitlab.com/soul.id/soul.technology/website:v0.1
-    restart: always
-    ports:
-      - 80:80
