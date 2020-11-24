@@ -1,0 +1,101 @@
+<div class="hero-head">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <div class="logo brand">
+            <a href="/index.html"> Soul Technology Labs </a>
+          </div>
+        </div>
+
+        <div class="navbar-burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <script>
+          $(document).ready(function () {
+            // Check for click events on the navbar burger icon
+            $('.navbar-burger').click(function () {
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              $('.navbar-burger').toggleClass('is-active');
+              $('.navbar-menu').toggleClass('is-active');
+            });
+          });
+        </script>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="a-menu is-size-9 navbar-link"> Products </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/products/health-stack.html">
+                National Health Stack
+              </a>
+
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="/products/account-aggregation.html">
+                Account Aggregation
+              </a>
+
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="/products/open-credit.html">
+                Open Credit Enablement Network
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="a-menu is-size-9 navbar-link"> Use Cases </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/use-cases/lending.html">
+                Personal Health Records
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="/use-cases/wealth.html">
+                Financial Data Aggregation
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="/use-cases/personal-finance.html">
+                Digital Credit
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="a-menu is-size-9 navbar-link"> Developers </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/docs/index.html">
+                Documentation
+              </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item" href="https://app.soul.technology">
+                Portal
+            </div>
+          </div>
+
+          <a class="a-menu is-size-9 navbar-item"> Company </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button has-skyblue-bg"
+                href="https://app.soul.technology/login"
+              >
+                <strong>Log In</strong>
+              </a>
+              <a
+                class="button has-skyblue-bg"
+                href="https://app.soul.technology/sign-up"
+              >
+                <strong>Sign Up</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

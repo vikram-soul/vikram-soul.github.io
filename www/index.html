@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soul Technology Labs</title>
+    <link rel="stylesheet" href="/assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/fonts/icomoon/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/assets/js/bulma.js"></script>
+    <!-- Contact and Subscriber form -->
+    <script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script-min.js"></script>
+    <script src="/assets/js/subscribe-form.js"></script>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper" class="has-text-centered-mobile">
+      <!-- Hero -->
+      <section id="hero" class="hero is-medium">
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+
+        <script>
+          $(function () {
+            $('#nav-placeholder').load('nav.html');
+          });
+        </script>
+        <!--end of Navigation bar-->
+
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="is-size-2 is-size-4-mobile">
+              Technology for the India Stack
+            </h1>
+            <p class="has-text-steelblue">
+              We help companies of all sizes - small quickly adopt the India
+              stack to build products and services for all of India.
+            </p>
+          </div>
+          <div class="spacer">
+            <form id="subscribeForm">
+              <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <input
+                    class="input is-rounded is-size-6"
+                    name="email"
+                    type="email"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="control">
+                  <button
+                    type="submit"
+                    class="btn has-skyblue-bg is-size-7 is-size-8-mobile a-menu"
+                  >
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END Hero -->
+
+      <!-- Twitter Feed -->
+      <section id="twitter-feed" class="section has-white-skyblue-gradient">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img src="assets/img/lending.png" alt="Image" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Lending</strong>
+                        <br />
+                        <small>
+                          Help consumers and business access formal credit
+                          through credit marketplace
+                        </small>
+                        <br /><br />
+                        <a href="./use-cases/lending.html">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img src="assets/img/wealth.png" alt="Image" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Wealth management</strong>
+                        <br />
+                        <small>
+                          Access user's financial data to help them make sound
+                          investment decisions.
+                        </small>
+                        <br /><br />
+                        <a href="./use-cases/wealth.html">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img src="assets/img/banking.png" alt="Image" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Banking</strong>
+                        <br />
+                        <small>
+                          Help users share their financial data so they can
+                          avail better services.
+                        </small>
+                        <br /><br />
+                        <a href="./use-cases/banking.html">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img src="assets/img/personal-finance.png" alt="Image" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Personal Finance</strong>
+                        <br />
+                        <small>
+                          Access user's financial data to help them make sense
+                          of their money.
+                        </small>
+                        <br /><br />
+                        <a href="./use-cases/personal-finance.html"
+                          >Learn More</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Twitter Feed -->
+      <!-- Features -->
+      <section id="features" class="section has-skyblue-bg">
+        <div class="container">
+          <div class="columns reverse-row-order">
+            <div class="column">
+              <h3 class="is-size-3">Easy Integration</h3>
+              <p class="paragraph">
+                With just a few lines of code, you can implement Account
+                Aggregation and OCEN frameworks.
+              </p>
+            </div>
+            <div class="column">
+              <img
+                class="feature-img"
+                src="assets/img/feature1.png"
+                alt="feature"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <img
+                class="feature-img"
+                src="assets/img/feature2.png"
+                alt="feature"
+              />
+            </div>
+            <div class="column">
+              <h3 class="is-size-3">User Experience</h3>
+              <p class="paragraph">
+                Our front-end module is easy to drop into whatever you’re
+                building and designed to optimize conversion.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="columns reverse-row-order">
+            <div class="column">
+              <h3 class="is-size-3">Analytics and AI engine</h3>
+              <p class="paragraph">
+                Not just raw data, we process and analyze it so you just can
+                make quick meaningful decisions. We also offer automated
+                processing such as underwriting and loan disbursement and
+                collections.
+              </p>
+            </div>
+            <div class="column">
+              <img
+                class="feature-img"
+                src="assets/img/feature3.png"
+                alt="feature"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Features -->
+      <!-- Newsletter -->
+      <section id="contactForm" class="section">
+        <div class="container">
+          <h3 class="is-size-3">Ready to get started?</h3>
+          <form id="contactForm" class="form-horizontal">
+            <fieldset>
+              <!-- Text input-->
+              <label class="label" for="name"></label>
+              <div class="field has-addons">
+                <div class="control">
+                  <a class="button is-static"> Name </a>
+                </div>
+
+                <div class="control is-expanded">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="John Doe"
+                    class="input"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <!-- Prepended text-->
+              <label class="label" for="email"></label>
+              <div class="field has-addons">
+                <div class="control">
+                  <a class="button is-static"> Email </a>
+                </div>
+                <div class="control is-expanded">
+                  <input
+                    id="email"
+                    name="email"
+                    class="input"
+                    placeholder="Your Email"
+                    type="email"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <label class="label" for="company"></label>
+              <div class="field has-addons">
+                <div class="control">
+                  <a class="button is-static"> Company </a>
+                </div>
+                <div class="control is-expanded">
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Company"
+                    class="input"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="field">
+                <label class="label" for="message"></label>
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    id="message"
+                    name="message"
+                    placeholder="What are you building?"
+                  ></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn has-skyblue-bg is-size-7 a-menu">
+              Contact us
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- END Newsletter -->
+      <!--footer bar-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function () {
+          $('#footer-placeholder').load('footer.html');
+        });
+      </script>
+      <!--end of footer bar-->
+    </div>
+    <!-- END Wrapper -->
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Soul Technology Labs</title>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/bulma.min.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/fonts/icomoon/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <style>
+            .bg-cover {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/img/bg_cover.jpg') no-repeat;
+                background-size: cover;
+            }
+
+            .input.is-ghost {
+                background: transparent;
+                border: solid 1px #ffffff;
+                color: #ffffff;
+            }
+
+            .input.is-ghost::placeholder {
+                color: #888888;
+            }
+
+            .button.is-ease {
+                color: #eeeeee;
+                border-color: #eeeeee;
+                transition: color 0.35s ease, border-color 0.35s ease;
+            }
+
+            .button.is-ease:hover {
+                color: skyblue;
+                border-color: #ffffff;
+            }
+
+            .hero .subtitle {
+                padding: 1.5rem;
+            }
+
+            .body p {
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+        <section class="hero is-info is-fullheight bg-cover">
+            <div class="body">
+
+                <div class="container has-text-centered">
+
+                    <div class="column is-6 is-offset-6" style="margin-top: 20rem;">
+
+                        <h1 class="title" style="color: skyblue">
+                            Launching Soon!
+                        </h1>
+                        <h2 class="subtitle">
+                            We will let you know as soon this feature is released
+                        </h2>
+
+                        <div id="subscribe" class="field is-grouped">
+                            <p class="control is-expanded">
+                                <input class="input is-rounded is-ghost has-text-centered" type="email" placeholder="Enter your email">
+                            </p>
+                        </div>
+
+                        <div class="field is-grouped is-grouped-centered">
+                            <p>
+                                <a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold" href="/index.html">
+                                    Back Home
+                                </a>
+                                <a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold">
+                                    Subscribe
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer bar-->
+        <div id="footer-placeholder"></div>
+        <script>
+            $(function () {
+                $("#footer-placeholder").load("/footer.html");
+            });
+        </script>
+        <!--end of footer bar-->
+    </body>
+</html>

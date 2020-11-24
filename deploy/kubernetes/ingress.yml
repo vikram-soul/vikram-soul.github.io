@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: soul-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: "g-ingress"
+    kubernetes.io/redirect-to-https: "true"
+    kubernetes.io/ingress.class: "gce"
+    networking.gke.io/managed-certificates: "www-soul-technology"
+spec:
+  backend:
+    serviceName: soultechnology
+    servicePort: 80
+  rules:
+  - host: soul.technology
+    http:
+      paths:
+      - backend:
+          serviceName: soultechnology
+          servicePort: 80
